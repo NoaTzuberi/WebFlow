@@ -85,28 +85,34 @@ nav {
 
 /* Hero Section */
 
-header h1{
-    color: var(--hero-main-text);
-    font-size: var(--hero-main-size);
-    font-weight: var(--hero-main-weight);
-}
-header p{
-    color: var(--hero-secondary-text);
-    font-size: var(--hero-secondary-size);
-}
-
 #hero-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #hero-content{
     flex: 1;
     min-width: 300px;
     max-width: 600px;
+    max-height: 400px;
     padding-right: 20px;
+}
+
+#hero-content h1 {
+    color: var(--hero-main-text);
+    font-size: var(--hero-main-size);
+    font-weight: var(--hero-main-weight);
+    margin-bottom: 20px;
+}
+
+#hero-content p {
+    color: var(--hero-secondary-text);
+    font-size: var(--hero-secondary-size);
+    margin-bottom: 30px;
 }
 
 #hero-button{
