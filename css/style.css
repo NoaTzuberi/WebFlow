@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
+
+:root {
+    /* Background Colors */
+    --hero-footer-background: #1F2937;
+    --quote-background: #E5E7EB;
+    
+    /* Text Colors */
+    --hero-main-text: #F9FAF8;
+    --hero-secondary-text: #E5E7EB;
+    --header-link-text: #E5E7EB;
+    --header-logo-text: #F9FAF8;
+    --information-header-text: #1F2937;
+    --quote-text: #1F2937;
+    
+    /* Button / Call to Action */
+    --button-background: #3882F6;
+
+    /* Font Family */
+    --font-family: "Roboto", sans-serif;
+
+    /* Font Sizes */
+    --hero-main-size: 48px;
+    --hero-secondary-size: 18px;
+    --header-link-size: 18px;
+    --header-logo-size: 24px;
+    --information-header-size: 36px;
+    --quote-size: 36px;
+
+    /* Font Weights */
+    --hero-main-weight: 800;
+    --information-header-weight: 800;
+    --quote-weight: 300;
+
+    /* Font Styles */
+    --quote-style: italic;
+}
+/* Home page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header,
+footer{
+    background-color: var(--hero-footer-background);
+    padding: 0 5% 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.nav-brand{
+    display: flex;
+    align-items: center;
+}
+
+#nav-logo{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+#nav-links-header {
+    display: flex;   
+    gap: 60px;
+ 
+}
+
+#nav-links-header a {
+    color: var(--header-link-text);
+    font-family: var(--font-family);
+    font-size: var(--header-link-size);
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+header h1{
+    color: var(--hero-main-text);
+    font-size: var(--hero-main-size);
+    font-weight: var(--hero-main-weight);
+}
+header p{
+    color: var(--hero-secondary-text);
+    font-size: var(--hero-secondary-size);
+}
+
+#hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-content{
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding-right: 20px;
+}
+
+#hero-button{
+    background-color: var(--button-background);
+    color: var(--hero-main-text);
+    border: none;
+    padding: 15px 20px;
+    font-size: var(--hero-secondary-size);
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.19s ease;
+}
+
+#hero-button:hover{
+    background-color: #2C6AD9;
+}
+
+
+
+#hero-image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+ }
+
+ /* Information Section */
+ #information-section{
+    height: 300px;/*placeholder for now, so we can see the hero & footer sections*/
+ }
+
+
+ /* footer Section */
+ /* all the footer design is a placeholder for now dont hasitate to change it */
+ footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+ }
+
+#footer-text{
+    color: var(--hero-secondary-text);
+    font-size: var(--hero-secondary-size);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#nav-links-footer{
+    display: flex;
+    gap: 60px;
+    padding-top: 20px;
+}
+
+#nav-links-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+
+#nav-links-footer li {
+    margin-bottom: 10px;
+}
+
+#nav-links-footer a {
+    color: var(--hero-secondary-text);
+    text-decoration: none;
+    font-size: var(--hero-secondary-size);
+}
+
