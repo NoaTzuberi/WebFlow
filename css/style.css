@@ -251,7 +251,7 @@ nav {
 /* Quote Section */
 #quote-section{
     background-color: var(--quote-background);
-    padding: 60px 5%;
+    padding: 30px 5%;
     text-align: center;
 }
  
@@ -275,8 +275,8 @@ nav {
  footer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
  }
  
  #footer-left{
@@ -305,13 +305,11 @@ nav {
 }
 
 .footer-links{
-    display: flex;
-    color: var(--hero-secondary-text);
-    font-size: var(--hero-secondary-size);
-    margin-top: 20px;
-    transition: color 0.2s ease;
-
-
+     display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+    margin-top: 30px;
 }
 
 .footer-links ul {
