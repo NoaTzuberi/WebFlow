@@ -85,6 +85,29 @@ nav {
     font-family: var(--font-family);
     font-size: var(--header-link-size);
     text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#nav-links-header a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background-color: var(--button-background);
+    border-radius: 10px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+#nav-links-header a:hover {
+    color: var(--button-background);
+}
+
+#nav-links-header a:hover::after {
+    width: 100%;
 }
 
 /* Hero Section */
