@@ -37,7 +37,9 @@
     /* Font Styles */
     --quote-style: italic;
 }
+
 /* Home page */
+
 body {
     margin: 0;
     padding: 0;
@@ -134,8 +136,6 @@ nav {
     background-color: #2C6AD9;
 }
 
-
-
 #hero-image{
     width: 100%;
     max-width: 600px;
@@ -146,13 +146,14 @@ nav {
  }
 
  /* Information Section */
+
  #information-section{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* width: 0vw; */
     justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
  }
 
  .info-header-container {
