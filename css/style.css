@@ -236,7 +236,7 @@ nav {
     color: var(--paragraph-text);
  }
 
- #call-to-action-button{
+ #call-to-action-button{ 
     background-color: var(--button-background);
     color: var(--hero-main-text);
     border: var(--paragraph-text) 2px solid;
