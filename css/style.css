@@ -146,8 +146,12 @@ nav {
 
  /* Information Section */
  #information-section{
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    /* width: 0vw; */
+    justify-content: center;
+    align-items: center;
  }
 
  .info-header-container {
@@ -166,24 +170,29 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     padding-bottom: 20px;
  }
 
  .image-caption {
     padding-top: 10px;
-    width: 150px;
+    width: 100%;
+    max-width: 250px;
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
  }
 
  .template-article{
-    max-width: 150px;
+    max-width: 320px;
  }
 
+ .template-article figure {
+  margin: 0;
+}
+
  .info-image{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 250px;
+    max-height: 250px;
     border: var(--button-background) 2px solid;
     border-radius: 8px;
     border-color: #3882F6;
