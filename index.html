@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webflow</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
+
+        <!-- Nabe bar setion -->
         <nav>
             <div class="nav-brand">
                 <img id="nav-logo" src="images/homePage/logo.png" alt="Logo">
@@ -29,11 +33,57 @@
                 <img id="hero-image" src="images/homePage/heroImg.jpg" alt="Image">
             </div>
         </section>
-    </header>  
-    
+    </header>
+
+
+    <!-- Main section -->
+
     <main>
         <section id="information-section">
-    
+            <div class="info-header-container">
+                <h2>Our Solutions</h2>
+            </div>
+            <div id="templates-wrapper">
+                <!-- article 1 -->
+                <article class="template-article">
+                    <figure>
+                        <img class="info-image" src="images/homePage/webflow-temp1.webp" alt="template-1">
+                        <figcaption class="image-caption">
+                            Real-time collaboration on the design canvas.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- article 2 -->
+                <article class="template-article">
+                    <figure>
+                        <img class="info-image" src="images/homePage/temp2-webflow.webp" alt="template-2">
+                        <figcaption class="image-caption">
+                            AI tool generating responsive website layouts.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- article 3 -->
+                <article class="template-article">
+                    <figure>
+                        <img class="info-image" src="images/homePage/temp3-webflow.webp" alt="template-3">
+                        <figcaption class="image-caption">
+                            Inspecting CSS grid properties in developer mode.
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- article 4 -->
+                <article class="template-article">
+                    <figure>
+                        <img class="info-image" src="images/homePage/temp4-webflow.webp" alt="template-4">
+                        <figcaption class="image-caption">
+                            Visual timeline tracking layout design iterations.
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
         </section>
 
         <section id="call-to-action-section">
@@ -48,8 +98,10 @@
             </div>
         </section>
     </main>
-    
 
+
+
+    <!-- Footer section -->
     <footer>
         <p id="footer-text">placeholder text</p>
 
@@ -63,4 +115,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
