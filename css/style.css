@@ -144,8 +144,55 @@ nav {
 
  /* Information Section */
  #information-section{
-    height: 300px;/*placeholder for now, so we can see the hero & footer sections*/
+    display: flex;
+    flex-direction: column;
  }
+
+ .info-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+ }
+
+ #information-section h2 {
+    color: var(--information-header-text);
+ }
+
+ #templates-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 20px;
+ }
+
+ .image-caption {
+    padding-top: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+ }
+
+ .template-article{
+    max-width: 150px;
+ }
+
+ .info-image{
+    max-width: 150px;
+    max-height: 150px;
+    border: var(--button-background) 2px solid;
+    border-radius: 8px;
+    border-color: #3882F6;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease-in;
+    cursor: pointer;
+ }
+
+ .info-image:hover{
+    transform: scale(1.09);
+ } 
 
 
  /* footer Section */
