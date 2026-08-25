@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webflow</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleHomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
     <header>
 
-        <!-- Nabe bar setion -->
+        <!-- Nav bar section -->
         <nav>
             <div class="nav-brand">
                 <img id="nav-logo" src="images/homePage/logo.png" alt="Logo">
@@ -47,7 +48,7 @@
                 <!-- article 1 -->
                 <article class="template-article">
                     <figure>
-                        <img class="info-image" src="images/homePage/webflow-temp1.webp" alt="template-1">
+                        <img class="info-image" src="images/homePage/webflow-template-1.webp" alt="-website-template-1">
                         <figcaption class="image-caption">
                             Real-time collaboration on the design canvas.
                         </figcaption>
@@ -57,7 +58,7 @@
                 <!-- article 2 -->
                 <article class="template-article">
                     <figure>
-                        <img class="info-image" src="images/homePage/temp2-webflow.webp" alt="template-2">
+                        <img class="info-image" src="images/homePage/webflow-template-2.webp" alt="website-template-2">
                         <figcaption class="image-caption">
                             AI tool generating responsive website layouts.
                         </figcaption>
@@ -67,7 +68,7 @@
                 <!-- article 3 -->
                 <article class="template-article">
                     <figure>
-                        <img class="info-image" src="images/homePage/temp3-webflow.webp" alt="template-3">
+                        <img class="info-image" src="images/homePage/webflow-template-3.webp" alt="website-template-3">
                         <figcaption class="image-caption">
                             Inspecting CSS grid properties in developer mode.
                         </figcaption>
@@ -77,7 +78,7 @@
                 <!-- article 4 -->
                 <article class="template-article">
                     <figure>
-                        <img class="info-image" src="images/homePage/temp4-webflow.webp" alt="template-4">
+                        <img class="info-image" src="images/homePage/webflow-template-4.webp" alt="website-template-4">
                         <figcaption class="image-caption">
                             Visual timeline tracking layout design iterations.
                         </figcaption>
@@ -85,6 +86,15 @@
                 </article>
             </div>
         </section>
+        
+        <!-- quote section -->
+        <section id="quote-section">
+        <div id="quote-content">
+            <p>“The best way to predict the future is to invent it. Instead of waiting for the future to happen, we can create it ourselves through the ideas we pursue, the problems we solve, and the things we choose to build.”
+            </p>
+            <p id="author-quote">— Alan Kay</p>
+        </div>
+    </section>
 
         <section id="call-to-action-section">
             <div id="call-to-action-outer-container">
@@ -103,14 +113,41 @@
 
     <!-- Footer section -->
     <footer>
-        <p id="footer-text">placeholder text</p>
-
-        <nav id="nav-links-footer">
+        <div id="footer-left">
+            <img id="footer-logo" src="images/homePage/logo_cropped.png" alt="Logo">
+            <p id="footer-text">Turning ideas into modern, responsive web experiences</p>
+            <p id="footer-copyright">© 2026 Webflow. All rights reserved.</p>
+        </div>
+        <nav class="footer-links">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
+                <h4>Company</h4>
+                <li><a href="pages/index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/careers.html">Careers</a></li>
+                <li><a href="pages/pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+        <nav class="footer-links">
+            <ul>
+                <h4>Social</h4>
+                <li>
+                    <a href="mailto:">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>

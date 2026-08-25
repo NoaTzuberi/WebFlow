@@ -152,7 +152,6 @@ nav {
     /* width: 0vw; */
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
  }
 
  .info-header-container {
@@ -252,7 +251,7 @@ nav {
 /* Quote Section */
 #quote-section{
     background-color: var(--quote-background);
-    padding: 60px 5%;
+    padding: 30px 5%;
     text-align: center;
 }
  

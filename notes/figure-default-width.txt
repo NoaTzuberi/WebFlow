@@ -1,9 +1,0 @@
-
-
-
-This is a really common trap: you styled the inner elements (.info-image, .image-caption) with fixed/max dimensions and assumed the outer containers would just
- "handle it." But nothing in your chain was actually fluid — you had a hardcoded width on the caption and an unreset default margin on figure sitting between your flex container 
- and its children. Flexbox centering math is only as good as the box sizes it's given; if a descendant is overflowing its flex item silently, no amount of justify-content
-  or align-items will fix what you're seeing, because the problem isn't the centering logic — it's that the boxes being centered don't match what's rendering on screen.
-
-Go check your DevTools box model on one of these <figure> elements right now — I'd bet money you'll see that 40px/40px margin sitting there, unaccounted for.
