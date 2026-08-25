@@ -248,42 +248,158 @@ nav {
     transition: background-color 0.19s ease;
  }
 
+/* Quote Section */
+#quote-section{
+    background-color: var(--quote-background);
+    padding: 60px 5%;
+    text-align: center;
+}
+ 
+#quote-content{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--quote-size);
+    font-style: var(--quote-style);
+    font-weight: var(--quote-weight);
+    color: var(--quote-text);
+    text-align: left;
+}
 
+#author-quote {
+    color: var(--quote-text);
+    font-weight: 800;
+    font-size: 28px;
+    text-align: right;
+}
  /* footer Section */
- /* all the footer design is a placeholder for now dont hasitate to change it */
  footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ 
+ #footer-left{
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding-right: 20px;
+    padding-top: 20px;
+ }
+
+ #footer-logo{
+    width: 150px;
+    height: 70px;
+    object-fit: contain;
+
  }
 
 #footer-text{
     color: var(--hero-secondary-text);
     font-size: var(--hero-secondary-size);
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
-#nav-links-footer{
+#footer-copyright{
+    color: var(--hero-secondary-text);
+    font-size: 14px;
+}
+
+.footer-links{
     display: flex;
-    gap: 60px;
-    padding-top: 20px;
+    color: var(--hero-secondary-text);
+    font-size: var(--hero-secondary-size);
+    margin-top: 20px;
+    transition: color 0.2s ease;
+
+
 }
 
-#nav-links-footer ul {
+.footer-links ul {
     list-style: none;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
-#nav-links-footer li {
-    margin-bottom: 10px;
+.footer-links h4 {
+    color: var(--hero-main-text);
+    margin: 0 0 20px;
+    
 }
 
-#nav-links-footer a {
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links i {
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.2s ease;
+
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--hero-secondary-text);
     text-decoration: none;
     font-size: var(--hero-secondary-size);
+    transition: color 0.2s ease;
 }
+
+.footer-links a:hover,
+.footer-links a:hover span,
+.footer-links a:hover i {
+    color: #3882F6 !important;
+}
+
+/*mobile responsiveness*/
+@media (max-width: 768px) {
+    #hero-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #hero-image-container {
+        order: 1;
+        width: 100%;
+    }
+
+    #hero-content {
+        order: 2;
+        width: 100%;
+        max-width: 600px;
+        padding-right: 0;
+    }
+
+    #hero-image {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    #hero-section {
+        gap: 30px;
+    }
+
+    #hero-content {
+        min-width: 250px;
+    }
+
+    #hero-image {
+        max-width: 450px;
+    }
+
+    #hero-content h1 {
+        font-size: 40px;
+    }
+
+    #nav-links-header {
+        gap: 30px;
+    }
+}
+
+
+
 
