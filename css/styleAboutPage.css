@@ -78,11 +78,11 @@ nav {
     align-items: center;
     text-align: center;
     background-color: var(--hero-footer-background);
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     margin-top: -30px;
 }
 
-.section-header {
+.team-header {
     margin-bottom: 40px;
 }
 
@@ -92,7 +92,7 @@ nav {
     font-weight: var(--hero-main-weight);
 }
 
-.team-header h3 {
+.team-header h2 {
     color: var(--hero-secondary-text);
 }
 
@@ -124,14 +124,64 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 60px;
-    margin-top: 20px;
+    padding-bottom: 120px;
+    margin-top: 40px;
+}
+
+.testimonials-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .review-section h2 {
     color: var(--information-header-text);
     font-weight: var(--information-header-weight);
     font-size: var(--information-header-size);
+}
+
+.quote-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.quote-content{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--quote-size);
+    font-style: var(--quote-style);
+    font-weight: var(--quote-weight);
+    color: var(--quote-text);
+    text-align: left;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    min-height: 160px;
+}
+
+.author-quote {
+    color: var(--quote-text);
+    font-weight: 800;
+    font-size: 28px;
+    text-align: right;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+.dots a {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #c7c2bc;
+    text-decoration: none;
 }
 
 /* footer Section */

@@ -198,6 +198,29 @@ nav {
 
  /* Quote Section */
 
+#quote-section{
+    background-color: var(--quote-background);
+    padding: 30px 5%;
+    text-align: center;
+}
+ 
+#quote-content{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--quote-size);
+    font-style: var(--quote-style);
+    font-weight: var(--quote-weight);
+    color: var(--quote-text);
+    text-align: left;
+}
+
+#author-quote {
+    color: var(--quote-text);
+    font-weight: 800;
+    font-size: 28px;
+    text-align: right;
+}
+
  /* Call to Action Section */
  #call-to-action-section{
     display: flex;
@@ -239,29 +262,6 @@ nav {
     transition: background-color 0.19s ease;
  }
 
-/* Quote Section */
-#quote-section{
-    background-color: var(--quote-background);
-    padding: 30px 5%;
-    text-align: center;
-}
- 
-#quote-content{
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: var(--quote-size);
-    font-style: var(--quote-style);
-    font-weight: var(--quote-weight);
-    color: var(--quote-text);
-    text-align: left;
-}
-
-#author-quote {
-    color: var(--quote-text);
-    font-weight: 800;
-    font-size: 28px;
-    text-align: right;
-}
  /* footer Section */
  footer{
     display: flex;

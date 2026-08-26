@@ -1,0 +1,11 @@
+Yes, this is a classic "CSS-only carousel" pattern. 
+The most common approach uses radio buttons (or checkboxes) as hidden state controllers, paired with <label> elements 
+as your < and > arrows — no JavaScript needed.
+
+.track is a flex row with scroll-snap-type: x mandatory, and each .slide has scroll-snap-align: 
+start and flex: 0 0 100% — so it behaves like a horizontal paginated view.
+
+The < and > are plain <a href="#slideN"> anchor links pointing at each slide's id. Clicking one triggers the browser's 
+native scroll-to-anchor behavior, and scroll-behavior: smooth on the track animates it.
+
+The dots at the bottom are the same trick, just styled as small circles.
