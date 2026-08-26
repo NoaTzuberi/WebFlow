@@ -70,7 +70,72 @@ nav {
     width: 100%;
 }
 
+/* Main Section */
+
+.our-team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-footer-background);
+    padding-bottom: 60px;
+    margin-top: -30px;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.team-header h1 {
+    color: var(--hero-main-text);
+    font-size: var(--hero-main-size);
+    font-weight: var(--hero-main-weight);
+}
+
+.team-header h3 {
+    color: var(--hero-secondary-text);
+}
+
+.team-members-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+    gap: 40px;
+}
+
+.team-member h3 {
+    color: var(--hero-main-text);
+}
+
+.team-member p {
+    color: var(--hero-secondary-text);
+}
+
+.team-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-top: 20px;
+}
+
+.review-section h2 {
+    color: var(--information-header-text);
+    font-weight: var(--information-header-weight);
+    font-size: var(--information-header-size);
+}
+
 /* footer Section */
+
  footer{
     display: flex;
     flex-wrap: wrap;
