@@ -222,6 +222,7 @@ nav {
 }
 
  /* Call to Action Section */
+
  #call-to-action-section{
     display: flex;
     flex-direction: column;
@@ -235,6 +236,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 70vw;
     height: 150px;
     border-radius: 8px;
