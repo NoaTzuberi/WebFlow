@@ -1,43 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 
-:root {
-    /* Background Colors */
-    --hero-footer-background: #1F2937;
-    --quote-background: #E5E7EB;
-    --call-to-action-background: #3882F6;
-    
-    /* Text Colors */
-    --paragraph-text: #F9FAF8;
-    --hero-main-text: #F9FAF8;
-    --hero-secondary-text: #E5E7EB;
-    --header-link-text: #E5E7EB;
-    --header-logo-text: #F9FAF8;
-    --information-header-text: #1F2937;
-    --quote-text: #1F2937;
-    
-    /* Button */
-    --button-background: #3882F6;
-
-    /* Font Family */
-    --font-family: "Roboto", sans-serif;
-
-    /* Font Sizes */
-    --hero-main-size: 48px;
-    --hero-secondary-size: 18px;
-    --header-link-size: 18px;
-    --header-logo-size: 24px;
-    --information-header-size: 36px;
-    --quote-size: 36px;
-
-    /* Font Weights */
-    --hero-main-weight: 800;
-    --information-header-weight: 800;
-    --quote-weight: 300;
-
-    /* Font Styles */
-    --quote-style: italic;
-}
-
 /* Home page */
 
 body {
@@ -236,7 +198,31 @@ nav {
 
  /* Quote Section */
 
+#quote-section{
+    background-color: var(--quote-background);
+    padding: 30px 5%;
+    text-align: center;
+}
+ 
+#quote-content{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--quote-size);
+    font-style: var(--quote-style);
+    font-weight: var(--quote-weight);
+    color: var(--quote-text);
+    text-align: left;
+}
+
+#author-quote {
+    color: var(--quote-text);
+    font-weight: 800;
+    font-size: 28px;
+    text-align: right;
+}
+
  /* Call to Action Section */
+
  #call-to-action-section{
     display: flex;
     flex-direction: column;
@@ -250,6 +236,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 70vw;
     height: 150px;
     border-radius: 8px;
@@ -277,29 +264,6 @@ nav {
     transition: background-color 0.19s ease;
  }
 
-/* Quote Section */
-#quote-section{
-    background-color: var(--quote-background);
-    padding: 30px 5%;
-    text-align: center;
-}
- 
-#quote-content{
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: var(--quote-size);
-    font-style: var(--quote-style);
-    font-weight: var(--quote-weight);
-    color: var(--quote-text);
-    text-align: left;
-}
-
-#author-quote {
-    color: var(--quote-text);
-    font-weight: 800;
-    font-size: 28px;
-    text-align: right;
-}
  /* footer Section */
  footer{
     display: flex;
