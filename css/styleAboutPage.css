@@ -295,11 +295,11 @@ nav {
     }
 
     .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
 
     .team-photo {
         width: 100px;
