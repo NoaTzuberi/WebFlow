@@ -81,6 +81,30 @@ nav {
 #nav-links-header a:hover::after {
     width: 100%;
 }
+.nav-toggle {
+    display: none;
+}
+
+.nav-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.nav-burger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--header-link-text);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* main page */
 #pricing-page-main {
     background: linear-gradient(
         to bottom,
@@ -465,7 +489,7 @@ nav {
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
     nav {
         padding: 0 4% 50px;
     }
@@ -511,34 +535,52 @@ nav {
 
 @media (max-width: 767px) {
     nav {
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        padding: 10px 20px 25px;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .nav-brand {
-        width: 100%;
-        justify-content: center;
+        position: relative;
+        height: 80px;
     }
 
     #nav-logo {
         width: 100px;
-        height: 80px;
+        height: 100px;
+    }
+
+    .nav-burger {
+        display: flex;
     }
 
     #nav-links-header {
-        width: 100%;
-        justify-content: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
         align-items: center;
-        gap: 18px;
-        flex-wrap: wrap;
+        gap: 0;
+        background-color: var(--hero-footer-background);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 10;
     }
 
     #nav-links-header a {
-        font-size: 15px;
+        padding: 16px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-toggle:checked ~ #nav-links-header {
+        max-height: 300px;
+    }
+
+    .nav-toggle:checked ~ .nav-burger span:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+    .nav-toggle:checked ~ .nav-burger span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked ~ .nav-burger span:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
     }
 
     #pricing-page-background {
