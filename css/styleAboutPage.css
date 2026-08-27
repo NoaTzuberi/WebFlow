@@ -306,7 +306,7 @@ nav {
     }
     
     .review-container {
-        max-width: 320px;
+        max-width: 300px;
     }
 
     .review-header h2 {
@@ -319,5 +319,22 @@ nav {
 
     .author-quote {
         font-size: 20px;
+    }
+
+    footer {
+        gap: 20px 20px;
+    }
+
+    #footer-left {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .footer-links {
+        flex: 1 1 40%;
+        min-width: 100px;
+        margin-top: 10px;
+        padding-bottom: 20px;
     }
 }
