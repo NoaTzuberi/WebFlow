@@ -81,7 +81,7 @@ nav {
 #nav-links-header a:hover::after {
     width: 100%;
 }
-#pricing-page-background {
+#pricing-page-main {
     background: linear-gradient(
         to bottom,
         #1F2937 0%,
