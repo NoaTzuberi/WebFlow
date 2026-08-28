@@ -276,6 +276,8 @@
         color: #3882F6 !important;
     }
 
+    /*mobile responsiveness*/
+
     @media (max-width: 767px) {
 
     header nav {
@@ -330,6 +332,19 @@
     .nav-toggle:checked ~ .nav-burger span:nth-child(3) {
         transform: translateY(-8.5px) rotate(-45deg);
     }
+
+    /* Job List Section */
+    
+    .icon-image {
+        display: none;
+    }
+
+    .job-description {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* Foooter section */
     footer {
             width: 100%;
             box-sizing: border-box;
