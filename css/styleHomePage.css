@@ -224,17 +224,11 @@ nav {
 #quote-section{
     background-color: var(--quote-background);
     padding: 30px 5%;
-    text-align: center;
-}
- 
-#quote-content{
-    max-width: 800px;
-    margin: 0 auto;
+    text-align: left;
     font-size: var(--quote-size);
     font-style: var(--quote-style);
     font-weight: var(--quote-weight);
     color: var(--quote-text);
-    text-align: left;
 }
 
 #author-quote {
@@ -246,26 +240,19 @@ nav {
 
  /* Call to Action Section */
 
- #call-to-action-outer-container{
+
+ #call-to-action-section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 70vw;
-    height: 150px;
     border-radius: 8px;
-    padding: 0 80px 0 80px;
+    padding: 30px 80px; /* Added 30px so the button is within the container*/
     background-color: var(--call-to-action-background);
- }
- 
- #call-to-action-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0 60px 0;
- }
+    margin: 60px auto;
+ } 
 
  #call-to-action-section h3{
     color: var(--hero-main-text);
@@ -399,9 +386,12 @@ nav {
         gap: 30px;
     }
 
-    #call-to-action-outer-container {
-        height: auto;
-        padding: 40px 60px;
+    #call-to-action-section {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        padding: 40px;
+        gap: 20px;
     }
 
     #call-to-action-text {
@@ -429,6 +419,7 @@ nav {
     #hero-image {
         max-width: 100%;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -500,14 +491,6 @@ nav {
 
     #hero-image {
         max-width: 100%;
-    }
-
-    #call-to-action-outer-container {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 30px;
-        gap: 20px;
     }
 
     .call-to-action-text {
